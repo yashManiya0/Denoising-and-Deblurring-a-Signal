@@ -29,7 +29,7 @@
 
 ## Final Steps :
 
-* Run the code.py file in programming IDE of your choice. 
+* Run the script.py file in programming IDE of your choice. 
 
 * The code would demand for the file path of data.csv as input, so enter it in console and make sure that path ends with "data.csv".
 
