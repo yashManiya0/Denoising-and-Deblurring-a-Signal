@@ -1,8 +1,8 @@
 # for importing the required libraries
 
 import numpy as np                                          # numpy for array handling and speedy operations
+import pandas as pd                                         # pandas for reading data
 import matplotlib.pyplot as plt                             # matplotlib for plotting graphs 
-import csv                                                  # csv for reading the data in .csv file
 
 
 # Below are all the functions including DTFT, IFT, denoising, deblurring and calculating MSE
@@ -110,18 +110,18 @@ h = [1/16, 4/16, 6/16, 4/16, 1/16]
 # taking input of the data.csv path
 a = input("Please enter the path of the data.csv file: ")
 b = a.split()
-if len(b)==0 or a[-8:]!="data.csv":
+if len(b)==0 or a[-4:]!=".csv":
     print("\nYou probaby provided the wrong path, default path is taken by the code. Please run the code again if results aren\'t visible.")
     path = "./data.csv"
 else:
     path = a
 
-with open(path, "r") as f:
-    a = list(csv.reader(f))
-    n = len(a)
-    for i in range(1, n):
-        x_n.append(float(a[i][0]))                          # storing the samples of x[n] in x_n
-        y_n.append(float(a[i][1]))                          # storing the samples of y[n] in y_n
+
+a = pd.read_csv(path)
+n = len(a)
+print(a.to_string())
+x_n = list(a['x[n]'])
+y_n = list(a['y[n]'])
 
 
 N = len(x_n)
