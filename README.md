@@ -17,12 +17,12 @@
 ## Dependencies :
 
     Given 3 libraries of python should be pre-installed :
-        1. csv
+        1. pandas
         2. numpy
         3. matplotlib
 
     To install them, write following code line in command prompt :
-        pip install csv          [However csv is pre-installed with python]
+        pip install pandas          
         pip install numpy
         pip install matplotlib
 
