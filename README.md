@@ -11,8 +11,6 @@
     Python 3.7 
     or later versions should be pre-installed.
 
-    Make sure you have unziped the zip file, else the code may not work.
-
 
 ## Dependencies :
 
