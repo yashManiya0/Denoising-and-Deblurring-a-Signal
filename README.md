@@ -19,12 +19,6 @@
         2. numpy
         3. matplotlib
 
-    To install them, write following code line in command prompt :
-        pip install pandas          
-        pip install numpy
-        pip install matplotlib
-
-
 ## Final Steps :
 
 * Run the script.py file in programming IDE of your choice. 
